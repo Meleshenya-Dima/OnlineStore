@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beauty.Services">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <ImageButton x:Name="setting" Source="threebars.png" Clicked="ImageButton_Clicked_1" BackgroundColor="White"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.15, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.1, Constant=-50}"/>
+            <Frame x:Name="popuplayout" HasShadow="True" IsVisible="False" BackgroundColor="White" HeightRequest="1000" WidthRequest="500.5">
+                    <StackLayout>
+                        <ImageButton Source="threebars.png" Clicked="ImageButton_Clicked_2" BackgroundColor="White"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=1.23, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.085, Constant=-50}"/>
+                        <Button Text="Мои записи" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="Button_Clicked"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor= 0.24, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.13, Constant=-50}"/>
+                        <Button Text="Записаться" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="Record"           
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor = 0.25, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.19, Constant=-50}"/>
+                        <Button Text="О нас" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="AboutUs"   
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor = 0.205, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.25, Constant=-50}"/>
+                    </StackLayout>
+                </Frame>
+                <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout BackgroundColor="White" Padding="10" Margin="0, 0, 0, 10">
+                    <Label Text="Услуги" FontSize="35" HorizontalTextAlignment="Center" FontFamily="Comfortaa" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.45, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.1, Constant=-50}"/>
+                    <Label Text="Пилинг лица" FontSize="25" FontFamily="Comfortaa" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.13, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.2, Constant=-50}"/>
+                    <Label Text="от 10р" FontSize="25" FontFamily="Comfortaa" Margin="270,-37, -20, 0" TextColor="Black"  
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.9, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.2, Constant=-50}"/>
+                    <Image Source="piling.jpg"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.12, Constant=-50}"  
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=0.25, Constant=-50}"/>
+                    <Label Text="Чистка лица" FontSize="25" FontFamily="Comfortaa" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.13, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Label Text="от 20р" FontSize="25" FontFamily="Comfortaa" Margin="270,-37, -20,0" TextColor="Black"  
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.9, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Image Source="Chistka.jpg"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.12, Constant=-50}"  
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=1, Constant=-50}"/>
+                    <Label Text="Маска глиняная" FontSize="25" FontFamily="Comfortaa" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.13, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Label Text="от 8р" FontSize="25" FontFamily="Comfortaa" Margin="270,-37, -20,0"  TextColor="Black"  
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.9, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Image Source="maska.jpg"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.12, Constant=-50}"  
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=1, Constant=-50}"/>
+                    <Label Text="Дерматология" FontSize="25" FontFamily="Comfortaa" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.13, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Label Text="от 15р" FontSize="25" FontFamily="Comfortaa" Margin="270,-37, -20,0"  TextColor="Black"  
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.9, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Image Source="derma.jpg"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.12, Constant=-50}"  
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=1, Constant=-50}"/>
+                    <Label Text="Массаж лица" FontSize="25" FontFamily="Comfortaa" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.13, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Label Text="от 13р" FontSize="25" FontFamily="Comfortaa" Margin="270,-37, -20,0"  TextColor="Black"  
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.9, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}"/>
+                    <Image Source="mass.jpg"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.12, Constant=-50}"  
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=1, Constant=-50}"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

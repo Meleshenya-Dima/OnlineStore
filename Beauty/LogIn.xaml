@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beauty.LogIn">
+    <ContentPage.Content>
+        <RelativeLayout BackgroundColor="White">
+            <ImageButton Source="back.png" BackgroundColor="white" Clicked="ImageButton_Clicked"
+                    HorizontalOptions="Start"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.12, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.1, Constant=-50}"/>
+            <Label Text="Log in" FontFamily="Comfortaa" FontSize="33" TextColor="Black"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.5, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.35, Constant=-50}"/>
+            <Grid                     
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.25, Constant=-50}"  
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.45, Constant=-50}">
+                <Frame
+                Padding = "0"
+                BorderColor="Black"
+                IsClippedToBounds="true">
+                    <Entry x:Name="loginEntry" Placeholder = "Login" WidthRequest="300" TextColor="Black" PlaceholderColor="Black"/>
+                </Frame>
+            </Grid>
+            <Grid                     
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.25, Constant=-50}"  
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=  0.53, Constant=-50}">
+            <Frame
+                Padding = "0"
+                BorderColor="Black"
+                IsClippedToBounds="true">
+                    <Entry x:Name="passwordEntry" Placeholder = "Password" WidthRequest="300" IsPassword ="True" TextColor="Black" PlaceholderColor="Black"/>
+                </Frame>
+            </Grid>
+            <Button Text="Next" WidthRequest="150" Margin="20"  Padding="20,20" BackgroundColor="Black" TextColor="White" FontSize="15" FontFamily="Comfortaa" CornerRadius = "8" Clicked="Button_Clicked"
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.385, Constant=-50}"  
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.6, Constant=-50}"/>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

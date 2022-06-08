@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beauty.LastRecord">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid x:Name ="StartRecord"  IsVisible="true">
+                <StackLayout>
+                    <Label Text="Записаться" FontFamily="Comfortaa" FontSize="40" Padding="80, 30, 20, 0" TextColor="Black"/>
+                    <Label x:Name="recordValue" FontFamily="Comfortaa" FontSize="35" Padding="90, 0, 20, 20" TextColor="Black"/>
+                    <Label Text="Дата записи: " FontSize="25" TextColor="Black" Padding="16, 0, 10, 0"/>
+                    <DatePicker x:Name="DataStartRecord"  Format="D" DateSelected="DataStartRecord_DateSelected" FontSize="25" Margin="15, 0, 10, 0"/>
+                    <Label Text="Время записи: " FontSize="25" TextColor="Black" Padding="15, 20, 10, 0"/>
+                    <TimePicker x:Name="TimeStartRecord" Format="T" PropertyChanged="TimeStartRecord_PropertyChanged" Margin="15, 0, 10, 0"/>
+                    <Button Text="Записаться" FontSize="18" TextColor="Black" BackgroundColor="White" BorderColor="Black" Clicked="Button_Clicked" BorderWidth="1" Margin="20, 40, 20, 10"/>  
+                </StackLayout>
+            </Grid>
+            <Grid x:Name ="EndRecord" IsVisible="false">
+                <StackLayout>
+                    <Label Text="Запиcь" FontFamily="Comfortaa" FontSize="40" Padding="120, 30, 20, 0" TextColor="Black"/>
+                    <Label x:Name="endRecordValue" FontFamily="Comfortaa" FontSize="35" Padding="90, 0, 20, 20" TextColor="Black"/>
+                    <Label x:Name="LastData" Text="Дата записи:"  FontSize="25" TextColor="Black" Padding="16, 0, 10, 0"/>
+                    <Label x:Name="LastTime" Text="Время записи: none "  FontSize="25" TextColor="Black" Padding="16, 10, 10, 0"/>
+                    <Image Source="qrcode.png" Margin="70"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

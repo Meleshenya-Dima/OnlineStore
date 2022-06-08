@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beauty.AboutUs">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <ImageButton x:Name="setting" Source="threebars.png" BackgroundColor="White" Clicked="ImageButton_Clicked_1" 
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.15, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.1, Constant=-50}"/>
+            <Frame x:Name="popuplayout" HasShadow="True" IsVisible="False" Scale="0" BackgroundColor="White" HeightRequest="623" WidthRequest="150.5" Padding="10, 10, 10, -60" AbsoluteLayout.LayoutFlags="All"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor= 0.12, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.07, Constant=-50}">
+                <StackLayout>
+                    <ImageButton Source="threebars.png" Clicked="ImageButton_Clicked_2" BackgroundColor="White"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=1.23, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.085, Constant=-50}"/>
+                    <Button Text="Услуги" FontFamily="Comfortaa" FontSize="20" TextColor="Black" BackgroundColor="White" TextTransform="None" Clicked="Services"           
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor= 0.25, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.07, Constant=-50}"/>
+                    <Button Text="Мои записи" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="Button_Clicked"  
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor= 0.24, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.13, Constant=-50}"/>
+                    <Button Text="Записаться" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="Record"           
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor = 0.25, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.19, Constant=-50}"/>
+                </StackLayout>
+            </Frame>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Padding="20">
+                    <Label Text="О нас" FontSize="35" FontFamily="Comfortaa" TextColor="Black" Margin=" 120, 10, 10, 10"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.48, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.1, Constant=-50}"/>
+                    <Label Text="Косметологическая клиника 'Beauty' – это высококвалифицированные специалисты, новейшее оборудование, профессиональная и качественная косметика мировых лидеров. Клиника 'Beauty' использует все направления современной косметологии: аппаратную, эстетическую, инъекционную, а также уникальную в Минске методику швейцарского лифтинга плазмой Regenlab.Косметологическая клиника 'beauty' осуществляется на основании специального разрешения (лицензии) № М — 6588 от 25 августа 2010 года, выданной Министерством здравоохранения Республики Беларусь." HorizontalTextAlignment="Start" TextColor="Black" FontFamily="Comfortaa" WidthRequest="350" FontAttributes="Bold"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.2, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.2, Constant=-50}"/>
+                    <Label Text="Косметологическая клиника 'Beauty' осуществляется на основании специального разрешения (лицензии) № М — 6588 от 25 августа 2010 года, выданной Министерством здравоохранения Республики Беларусь." HorizontalTextAlignment="Start" TextColor="Black" FontFamily="Comfortaa" LineHeight="1" WidthRequest="350" FontAttributes="Bold"
+                   RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.2, Constant=-50}"  
+                   RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.55, Constant=-50}"/>
+                    <Label Text="Фото"  FontFamily="Comfortaa" TextColor="Black" FontAttributes="Bold" FontSize="20" Margin=" 140, 10, 10, 10"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.55, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.74, Constant=-50}"/>
+                    <Image Source="AboutUs" VerticalOptions="Fill" HorizontalOptions="Fill"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.14, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.85, Constant=-50}" IsOpaque="False"/>
+                    <Image Source="AboutUs1"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.6, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 1, Constant=-50}" IsOpaque="False"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

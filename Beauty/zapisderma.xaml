@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beauty.zapisderma">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <ImageButton x:Name="setting" Source="threebars.png" Clicked="setting_Clicked" BackgroundColor="White"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=0.15, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.1, Constant=-50}"/>
+            <Frame x:Name="popuplayout" HasShadow="True" IsVisible="False" BackgroundColor="White" HeightRequest="900" WidthRequest="500.5" Padding="10, 10, 10, -200">
+                <StackLayout>
+                    <ImageButton Source="threebars.png" Clicked="ImageButton_Clicked" BackgroundColor="White"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Width, Factor=1.23, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor= 0.085, Constant=-50}"/>
+                    <Button Text="Мои записи" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="Button_Clicked"
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor= 0.24, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.13, Constant=-50}"/>
+                    <Button Text="Записаться" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="Record"           
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor = 0.25, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.19, Constant=-50}"/>
+                    <Button Text="О нас" FontFamily="Comfortaa" FontSize="20" TextColor="Black" TextTransform="None" BackgroundColor="White" Clicked="AboutUs"   
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, Factor = 0.205, Constant=-50}" 
+                    RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor= 0.25, Constant=-50}"/>
+                </StackLayout>
+            </Frame>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout BackgroundColor="White" Padding="10">
+                    <Label x:Name ="name"  Text="Дерматология" FontFamily="Comfortaa" FontSize="30" TextColor="Black" Margin="80,0,0,0"/>
+                    <Image Source="derma.jpg" VerticalOptions="Fill" HorizontalOptions="Fill"/>
+                    <Grid Margin="20,0,20,0">
+                        <Frame                
+                            Padding = "0"
+                            BackgroundColor="Pink"
+                            IsClippedToBounds="true"
+                            CornerRadius="10">
+                            <Label Text="ЧТО ПОДРАЗУМЕВАЕТ ДЕРМАТОЛОГИЯ?" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        </Frame>
+                    </Grid>
+                    <Label Text="·Грибковые заболевания кожи. В зависимости от места локации такие болезни может лечить дерматовенеролог (если в области гениталий), дерматолог-трихолог (на голове) или обычный дерматолог." TextColor="Black" Margin=" 20, 5, 10, 5"/>
+                    <Label Text="·Гнойные заболевания кожи. Сюда относятся любые поражения дермы и эпидермиса гнойными образованиями, это: псориаз, фурункулы, гидраденит, карбункулы, импетиго и другие." TextColor="Black" Margin=" 20, 5, 10, 5"/>
+                    <Label Text="·Дерматоз и дерматит." TextColor="Black" Margin=" 20, 5, 10, 5"/>
+                    <Label Text="·Аномалии в пигментации, к которым относят: пятна светлого или темного цвета, родинки, веснушки, родимые пятна." TextColor="Black" Margin=" 20, 5, 10, 5"/>
+                    <Label Text="·Любой вид лишая на голове, лице, гениталиях и коже. Паразитарные заболевания. Среди них: вшивость, чесотка, демодекоз, лейшманиоз." TextColor="Black" Margin=" 20, 5, 10, 5"/>
+                    <Label Text="·Болезни волосистой части головы. Вирусные заболевания кожного покрова (герпес, вирус)." TextColor="Black" Margin=" 20, 5, 10, 5"/>
+                    <Button x:Name="LastRecord" Text ="Записаться" TextColor="Black" BackgroundColor="White" BorderColor="Black" Clicked="LastRecord_Clicked" BorderWidth="1" Margin="20, 10, 20, 10"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

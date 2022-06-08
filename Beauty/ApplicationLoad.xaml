@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beauty.ApplicationLoad">
+    <ContentPage.Content>
+        <RelativeLayout BackgroundColor ="#f4eef6">
+            <Image Source="Logo.png" 
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.13, Constant=-50}" 
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.1, Constant=0}" />
+            <Button Text="Log in" WidthRequest="150" BackgroundColor="White" TextColor="Black" FontFamily="Comfortaa" Clicked="LogIn" BorderWidth="1" BorderColor="Black"
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.22, Constant=-50}" 
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor= 0.983, Constant=-50}"/>
+            <Button Text="Register" WidthRequest="150" BackgroundColor="Black" TextColor="White" Clicked="SignIn" FontFamily="Comfortaa"
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.65, Constant=-50}" 
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor= 0.983, Constant=-50}"/>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
